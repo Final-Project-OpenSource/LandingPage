@@ -75,8 +75,8 @@ header {
     }
 }
 
-.destin {
-    .destin-content {
+.plan {
+    .plan-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -101,6 +101,11 @@ header {
                     width: 70%;
                     letter-spacing: 1px;
                     margin: 0 auto;
+                }
+                & .price {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    padding-top: 1em;
                 }
             }
         }

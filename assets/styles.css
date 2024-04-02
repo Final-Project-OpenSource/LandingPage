@@ -42,7 +42,7 @@ header {
 }
 
 .hero {
-    background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+    background-image: url("https://www.2playbook.com/uploads/s1/15/87/4/entrenamiento-virtual-online_14_744x403.jpeg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -75,8 +75,8 @@ header {
     }
 }
 
-.destin {
-    .destin-content {
+.plan {
+    .plan-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -99,7 +99,13 @@ header {
                     font-size: 1em;
                     color: #777;
                     width: 70%;
+                    letter-spacing: 1px;
                     margin: 0 auto;
+                }
+                & .price {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    padding-top: 1em;
                 }
             }
         }

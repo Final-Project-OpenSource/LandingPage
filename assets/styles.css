@@ -132,6 +132,9 @@ header {
         }
     }
 }
+.comment, .user {
+    text-align: center;
+}
 
 .contact {
     .contact-content {

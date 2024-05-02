@@ -6,5 +6,5 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(() => {
         currentIndex = (currentIndex + 1) % images.length;
         hero.style.backgroundImage = `url('${images[currentIndex]}')`;
-    }, 4000); // Cambia la imagen cada 3 segundos (3000 milisegundos)
+    }, 4000); 
 });

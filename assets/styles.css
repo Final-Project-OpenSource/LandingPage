@@ -112,8 +112,8 @@ header {
     }
 }
 
-.testi {
-    .testi-content {
+.testimony {
+    .testimony-content {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -130,6 +130,10 @@ header {
                 color: #777;
             }
         }
+    }
+
+    .testimony-content img{
+        height: 450px;
     }
 }
 .comment, .user {

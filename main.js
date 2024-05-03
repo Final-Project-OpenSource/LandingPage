@@ -8,9 +8,4 @@ document.addEventListener("DOMContentLoaded", function() {
         hero.style.backgroundImage = `url('${images[currentIndex]}')`;
     }, 4000); 
 
-    const loginBtn = document.getElementById('login-btn');
-    loginBtn.addEventListener('click', function() {
-        // Redirigir a la página deseada
-        window.location.href = 'https://hosting-fithub.web.app';
-    });
 });

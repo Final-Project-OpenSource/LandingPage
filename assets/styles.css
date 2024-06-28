@@ -8,139 +8,132 @@ header {
     position: fixed;
     top: 0;
     z-index: 100;
-    .nav {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        font-weight: bold;
-        .nav-logo {
-            font-size: 2em;
-        }
-        .nav-menu {
-            display: flex;
-            gap: 3rem;
-            .nav-links {
-                display: flex;
-                justify-content: space-between;
-                gap: 3rem;
-
-            }
-            .nav-btn {
-                background-color: #195fa4;
-                color: #fff;
-                border-radius: 10px;
-                transition: background-color 0.2s ease-in-out;
-                height: 50%;
-                padding: 0 1rem;
-
-                margin-top: 27%;
-                &:hover {
-                    background-color: black;
-                }
-            }
-        }
-    }
 }
-
+.nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.nav-logo {
+    font-size: 2em;
+}
+.nav-menu {
+    display: flex;
+    gap: 3rem;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.nav-btn {
+    background-color: #195fa4;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    height: 50%;
+    padding: 0 1rem;
+    margin-top: 27%;
+}
+.nav-btn:hover {
+    background-color: black;
+}
 .hero {
     background-image: url("https://www.2playbook.com/uploads/s1/15/87/4/entrenamiento-virtual-online_14_744x403.jpeg");
     background-size: cover;
     background-position: center;
     position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-        width: 100%;
-        height: 100%;
-    }
-    .hero-content {
-        height: 40rem;
-        display: grid;
-        place-content: center;
-        text-align: center;
-        color: #fff;
-        position: relative;
-        z-index: 10;
-        & h1 {
-            font-size: 5em;
-            margin-bottom: 1rem;
-            font-weight: bold;
-        }
-        & p {
-            font-size: 1.5rem;
-            width: 60%;
-            margin: 0 auto;
-        }
-    }
 }
-
+.hero:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+.hero-content {
+    height: 40rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.hero-content h1 {
+    font-size: 5em;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.hero-content p {
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 0 auto;
+}
 .plan {
     .plan-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
-        .card {
-            max-width: min(30rem, 100%);
-            & img {
-                width: 100%;
-                border-radius: 10px 10px 0 0;
-            }
-            .info {
-                padding: 1.5rem;
-                text-align: center;
-                & h2 {
-                    font-size: 1.5em;
-                    margin-bottom: 1rem;
-                    font-weight: bold;
-                }
-                & p {
-                    font-size: 1em;
-                    color: #777;
-                    width: 70%;
-                    letter-spacing: 1px;
-                    margin: 0 auto;
-                }
-                & .price {
-                    font-size: 1.5em;
-                    font-weight: bold;
-                    padding-top: 1em;
-                }
-            }
-        }
+    }
+    .card {
+        max-width: min(30rem, 100%);
+    }
+    .card img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+    .info h2 {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    .info p {
+        font-size: 1em;
+        color: #777;
+        width: 70%;
+        letter-spacing: 1px;
+        margin: 0 auto;
+    }
+    .price {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-top: 1em;
     }
 }
-
 .testimony {
     .testimony-content {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 2rem;
-        .card {
-            padding: 1rem;
-            max-width: 40rem;
-            .comment {
-                font-size: 1.2em;
-                margin-bottom: 1rem;
-            }
-            .user {
-                font-size: 1em;
-                color: #777;
-            }
-        }
     }
-
-    .testimony-content img{
-        height: 450px;
+    .card {
+        padding: 1rem;
+        max-width: 40rem;
     }
+    .comment {
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+    }
+    .user {
+        font-size: 1em;
+        color: #777;
+    }
+}
+.testimony-content img {
+    height: 450px;
 }
 .comment, .user {
     text-align: center;
 }
-
 .contact {
     .contact-content {
         width: min(50rem, 100%);
@@ -150,66 +143,82 @@ header {
         text-align: center;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        .title {
-            padding-bottom: 1rem;
-        }
-        .sub-title {
-            font-size: 1.3em;
-            padding-bottom: 2rem;
-            text-align: center;
-            color: #777;
-        }
-        & form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            & label {
-                font-size: 1.2rem;
-                font-weight: 600;
-                margin-bottom: 10px;
-                text-align: left;
-                width: 100%;
-            }
-
-            & input[type="text"],
-            & input[type="email"],
-            & textarea {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 20px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 1rem;
-            }
-
-            & textarea {
-                resize: vertical;
-                height: 150px;
-            }
-
-            & button[type="submit"] {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                font-size: 1.2rem;
-                cursor: pointer;
-                transition: background-color 0.2s ease-in-out;
-            }
-
-            & button[type="submit"]:hover {
-                background-color: #555;
-            }
-            
-        }
+    }
+    .title {
+        padding-bottom: 1rem;
+    }
+    .sub-title {
+        font-size: 1.3em;
+        padding-bottom: 2rem;
+        text-align: center;
+        color: #777;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: left;
+        width: 100%;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    textarea {
+        resize: vertical;
+        height: 150px;
+    }
+    button[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+    }
+    button[type="submit"]:hover {
+        background-color: #555;
     }
 }
-
 footer {
     background-color: #222;
     color: #fff;
     text-align: center;
     padding: 1.5rem;
     margin-top: 7rem;
+}
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.video-container {
+    width: 100%;
+    max-width: 560px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
